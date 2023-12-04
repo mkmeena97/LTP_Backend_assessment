@@ -11,20 +11,64 @@ import jakarta.persistence.Table;
 public class Consultant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int consultant_id;
-    String consultant_name;
-    String consultant_email;
-    String consultant_phone;
+    int consultantId;
+    String consultantName;
+    String consultantEmail;
+    String consultantPhone;
     
     public Consultant() {
     }
 
-    public Consultant(int consultant_id, String consultant_name, String consultant_email, String consultant_phone) {
-        this.consultant_id = consultant_id;
-        this.consultant_name = consultant_name;
-        this.consultant_email = consultant_email;
-        this.consultant_phone = consultant_phone;
+  
+    public Consultant(int consultantId, String consultantName, String consultantEmail, String consultantPhone) {
+        this.consultantId = consultantId;
+        this.consultantName = consultantName;
+        this.consultantEmail = consultantEmail;
+        this.consultantPhone = consultantPhone;
     }
+
+
+
+
+    public int getConsultantId() {
+        return consultantId;
+    }
+
+
+    public String getConsultantName() {
+        return consultantName;
+    }
+
+
+    public String getConsultantEmail() {
+        return consultantEmail;
+    }
+
+
+    public String getConsultantPhone() {
+        return consultantPhone;
+    }
+
+
+    public void setConsultantId(int consultantId) {
+        this.consultantId = consultantId;
+    }
+
+
+    public void setConsultantName(String consultantName) {
+        this.consultantName = consultantName;
+    }
+
+
+    public void setConsultantEmail(String consultantEmail) {
+        this.consultantEmail = consultantEmail;
+    }
+
+
+    public void setConsultantPhone(String consultantPhone) {
+        this.consultantPhone = consultantPhone;
+    }
+
 
     @Override
     public String toString() {

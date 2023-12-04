@@ -28,13 +28,16 @@ public class Client {
 
     }
 
-    public Client(int client_id,String client_name,String client_email,String client_phone){
-        super();
-        this.clientId = client_id;
-        this.clientName = client_name;
-        this.clientEmail = client_email;
-        this.clientPhone = client_phone;
+    
+
+    public Client(int clientId, String clientName, String clientEmail, String clientPhone) {
+        this.clientId = clientId;
+        this.clientName = clientName;
+        this.clientEmail = clientEmail;
+        this.clientPhone = clientPhone;
     }
+
+
 
     public int getClientId() {
         return clientId;
