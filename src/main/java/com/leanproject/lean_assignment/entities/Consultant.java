@@ -1,11 +1,16 @@
 package com.leanproject.lean_assignment.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "consultant")
 public class Consultant {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int consultant_id;
     String consultant_name;
     String consultant_email;
