@@ -13,7 +13,7 @@ public interface ClientRepository extends JpaRepository<Client,Integer> {
 
    public Optional<Client> findById(int client_id);
 
-   @Query("select c from Client c where client_name=:client_name")
+   @Query("select c from Client c where clientName=:client_name")
   public Optional<Client> getClientByName(String client_name); 
   
 }

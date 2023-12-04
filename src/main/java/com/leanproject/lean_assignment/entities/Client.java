@@ -15,13 +15,13 @@ public class Client {
 
     @Id
     // @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int client_id;
+    int clientId;
     @Column
-    String client_name;
+    String clientName;
     @Column
-    String client_email;
+    String clientEmail;
     @Column
-    String client_phone;
+    String clientPhone;
 
     public Client(){
         super();
@@ -30,15 +30,46 @@ public class Client {
 
     public Client(int client_id,String client_name,String client_email,String client_phone){
         super();
-        this.client_id = client_id;
-        this.client_name = client_name;
-        this.client_email = client_email;
-        this.client_phone = client_phone;
+        this.clientId = client_id;
+        this.clientName = client_name;
+        this.clientEmail = client_email;
+        this.clientPhone = client_phone;
     }
+
+    public int getClientId() {
+        return clientId;
+    }
+
+    public String getClientName() {
+        return clientName;
+    }
+
+    public String getClientEmail() {
+        return clientEmail;
+    }
+
+    public String getClientPhone() {
+        return clientPhone;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
+    }
+
+    public void setClientName(String clientName) {
+        this.clientName = clientName;
+    }
+
+    public void setClientEmail(String clientEmail) {
+        this.clientEmail = clientEmail;
+    }
+
+    public void setClientPhone(String clientPhone) {
+        this.clientPhone = clientPhone;
+    }
+
     @Override
     public String toString() {
-        return "Client{" + "client_id=" + client_id + ", client_name='" + client_name + '\'' + ", client_email='" + client_email + '\'' + ", client_phone='" + client_phone + '\'' + '}';
+        return "Client{" + "client_id=" + clientId + ", client_name='" + clientName + '\'' + ", client_email='" + clientEmail + '\'' + ", client_phone='" + clientPhone + '\'' + '}';
     }
-
-
 }
