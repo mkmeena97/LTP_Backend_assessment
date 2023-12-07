@@ -35,4 +35,17 @@ public class SlotService {
         return os;
     }
 
+    public boolean bookSlot(int slot_id, int client_id)
+    {
+        int slot = srepo.bookSlot(slot_id, client_id);
+        if(slot>0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
